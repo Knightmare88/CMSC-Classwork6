@@ -7,14 +7,22 @@ int addition(int num1, int num2);
 int subtraction(int num1, int num2);
 int main()
 {
-	int addSub, num1, num2;
-	getChoice();
+	int choice, num1, num2, result;
+	choice = getChoice();
 	getNumbers(num1, num2);
 
-	if (addSub = 1)
-		addition(num1, num2);
+	if (choice == 1)
+	{
+		result = addition(num1, num2);
+		cout << "The result of the operation is: " << result;
+	}
+	else if (choice == 2)
+	{
+		result = subtraction(num1, num2);
+		cout << "The result of the operation is: " << result;
+	}
 	else
-		subtraction(num1, num2);
+		cout << "incorrect input";
 
 	return 0;
 }
@@ -39,13 +47,11 @@ void getNumbers(int &num1, int &num2)
 //basic addition function
 int addition(int num1, int num2)
 {
-	cout << endl << "The result of the operation is: " << num1 + num2 << endl;
 	return num1 + num2;
 }
 //basic subtraction function
 int subtraction(int num1, int num2)
 {
-	cout << endl << "The result of the operation is: " << num1 - num2 << endl;
 	return num1 - num2;
 }
 
