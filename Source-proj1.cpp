@@ -2,7 +2,7 @@
 using namespace std;
 //void getChoice(int addSub);
 int getChoice();
-void getNumbers(int &num1, int &num2);
+void getNumbers(int& num1, int& num2);
 int addition(int num1, int num2);
 int subtraction(int num1, int num2);
 int main()
@@ -36,7 +36,7 @@ int getChoice()
 	return addSub;
 }
 //retrieves numbers to add or sub
-void getNumbers(int &num1, int &num2)
+void getNumbers(int& num1, int& num2)
 {
 	cout << "Input first number: ";
 	cin >> num1;
